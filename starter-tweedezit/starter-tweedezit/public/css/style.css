@@ -1,0 +1,301 @@
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #141414;
+  margin: 0;
+  padding: 0;
+  color: #e5e5e5;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+  color: #e50914;
+}
+
+/* Header and Footer Styles */
+header, footer {
+  background-color: #141414;
+  color: #e5e5e5;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header a, footer a {
+  color: #e50914;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #333;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  max-width: 600px;
+}
+
+.form-container h1 {
+  margin-bottom: 25px;
+  color: #e5e5e5;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: #e5e5e5;
+}
+
+.form-input, .form-textarea, .form-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: 2px solid #555;
+  background-color: #222;
+  color: #e5e5e5;
+}
+
+.form-input, .form-textarea {
+  font-size: 18px;
+}
+
+.form-textarea {
+  resize: both;
+  height: 120px;
+}
+
+.form-button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.form-button:hover {
+  background-color: #b20710;
+}
+
+/* Video Table Styles */
+.video-table-container {
+  background-color: #333;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  max-width: 1100px;
+}
+
+.video-table-container h1 {
+  margin-bottom: 25px;
+  color: #e5e5e5;
+}
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  max-width: 1100px;
+}
+
+.series-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 30px;
+  color: #e5e5e5;
+}
+
+.series-table th, .series-table td {
+  padding: 15px;
+  border: 2px solid #555;
+  text-align: center;
+}
+
+.series-table th {
+  background-color: #222;
+  cursor: pointer;
+}
+
+.series-table th a {
+  color: #e50914;
+}
+
+.series-table tr:hover {
+  background-color: #444;
+}
+
+.create-series-link {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.btn-create {
+  background-color: #e50914;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-create:hover {
+  background-color: #b20710;
+}
+
+/* Login Form Styles */
+.login-container {
+  background-color: #333;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  max-width: 450px;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #b20710;
+  color: #fff;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #b20710;
+  border-radius: 5px;
+}
+
+.login-container form {
+  margin-top: 30px;
+}
+
+.login-container .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login-container .form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: #e5e5e5;
+}
+
+.login-container .form-group input {
+  width: 96%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: 2px solid #555;
+  background-color: #222;
+  color: #e5e5e5;
+  font-size: 18px;
+}
+
+.login-container button {
+  background-color: #e50914;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.login-container button:hover {
+  background-color: #b20710;
+}
+
+/* Styling the navigation bar */
+#main-nav {
+  background-color: #141414;
+  padding: 15px;
+}
+
+/* Styling the unordered list */
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling each list item */
+.nav-item {
+  margin-right: 30px;
+}
+
+/* Specific styling for logout item */
+.logout-item {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Styling the links */
+.nav-link {
+  color: #e5e5e5;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #333;
+}
+
+.form-group-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-form, .sort-form {
+  display: flex;
+  align-items: center;
+}
+
+.sort-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group label, .sort-group label {
+  margin-right: 10px;
+  color: #e5e5e5;
+}
+
+.search-form .form-group input, .sort-form .sort-group select, .form-group button {
+  margin-right: 10px;
+}
+
+.form-group button, .sort-group button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-group button:hover, .sort-group button:hover {
+  background-color: #b20710;
+}

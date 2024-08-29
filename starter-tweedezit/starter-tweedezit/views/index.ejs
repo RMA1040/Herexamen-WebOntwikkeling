@@ -1,0 +1,58 @@
+<%- include("partials/header") %>
+<%- include("partials/navbar") %>
+<div class="video-table-container">
+    <h1>Series List</h1>
+    <div class="form-group-container">
+        <form method="get" action="/" class="search-form">
+            <div class="form-group">
+                <label for="search">Search</label>
+                <input type="text" id="search" name="q">
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        <form method="post" class="sort-form">
+            <div class="form-group sort-group">
+                <label for="sort-by">Sort By</label>
+                <select id="sort-by">
+                    <option value="title">Title</option>
+                    <option value="description">Description</option>
+                    <option value="rating">Rating</option>
+                    <option value="genre">Genre</option>
+                </select>
+                <label for="order">Order</label>
+                <select id="order">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+                <button type="submit">Sort</button>
+            </div>
+        </form>
+    </div>
+    <form method="post">
+        <table class="series-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Link</th>
+                    <th>Description</th>
+                    <th>Rating</th>
+                    <th>Genre</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let serie of series) { %>
+                    <tr>
+                        <td><%= serie.title %></td>
+                        <td><%= serie._id %></td>
+                        <td><%= serie.url %></td>
+                        <td><%= serie.description %></td>
+                        <td><%= serie.rating %></td>
+                        <td><%= serie.genre %></td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </form>
+</div>
+<%- include("partials/footer") %>
